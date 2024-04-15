@@ -1,10 +1,18 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 const NavbarLink = ({ link }) => {
+  const pathName = usePathname();
+  console.log(pathName);
   return (
-    <Link href={link.url}>{link.title}</Link>
-  )
-}
+    <Link
+      className={`rounded p-1 ${pathName == link.url && "bg-black text-white"}`}
+      href={link.url}
+    >
+      {link.title}
+    </Link>
+  );
+};
 
-export default NavbarLink
+export default NavbarLink;
