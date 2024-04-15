@@ -1,19 +1,22 @@
 const Homepage = () => {
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* IMAGE CONTAINER */}
-      <div className="h-1/2 relative flex justify-center">
-        <img src="/hero.png" alt="" fill className="object-contain" />
+      <div className="h-1/2 lg:h-full lg:w-1/2">
+        <img
+          src="/hero.png"
+          fill="true"
+          className="h-full w-full object-contain"
+        />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="h-1/2">
+      <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 justify-center items-center overflow-y-scroll relative">
         {/* TITLE */}
-        <h1>
-          Hi, I'm Yohanse Mehabaw: Self-Learner Developer & Electrical
-          Engineering Student
+        <h1 className="text-4xl font-bold">
+          Self-Learner Developer & Electrical Engineering Student
         </h1>
         {/* DESCRIPTION */}
-        <p>
+        <p className="md:text-xl">
           Welcome to my portfolio! I'm passionate about both software
           development and electrical engineering. As a self-learner in the world
           of coding, I'm constantly exploring new technologies and honing my
@@ -24,9 +27,13 @@ const Homepage = () => {
           worlds of technology and engineering to make a meaningful impact.
         </p>
         {/* BUTTONS */}
-        <div className="flex">
-          <button>View My Work</button>
-          <button>Contact Me</button>
+        <div className="w-full flex gap-4">
+          <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+            View My Work
+          </button>
+          <button className="p-4 rounded-lg ring-1 ring-black">
+            Contact Me
+          </button>
         </div>
       </div>
     </div>

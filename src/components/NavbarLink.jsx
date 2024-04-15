@@ -4,7 +4,6 @@ import React from "react";
 
 const NavbarLink = ({ link }) => {
   const pathName = usePathname();
-  console.log(pathName);
   return (
     <Link
       className={`rounded p-1 ${pathName == link.url && "bg-black text-white"}`}
