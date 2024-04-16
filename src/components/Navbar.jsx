@@ -75,7 +75,7 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* LOGO */}
+      {/*  */}
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
