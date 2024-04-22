@@ -9,9 +9,22 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      About Page
+      {/* CONTAINER */}
+      <div>
+        {/* TEXT CONTAINER */}
+        <div>
+          {/* BIOGRAPHY CONTAINER */}
+          <div></div>
+          {/* SKILLS CONTAINER */}
+          <div></div>
+          {/* EXPERIENCE CONTAINER */}
+          <div></div>
+        </div>
+        {/* SVG CONTAINER */}
+        <div></div>
+      </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
