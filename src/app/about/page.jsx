@@ -1,8 +1,22 @@
 "use client";
 import { motion } from "framer-motion";
-
+import ExperienceListItemLeft from "../../components/ExperienceListItemLeft";
+import ExperienceListItemRight from "../../components/ExperienceListItemRight";
 const AboutPage = () => {
-  const skills = ["Python", "JavaScript", "TypeScript", "React.js", "Next.js", "Talwind CSS", "MongoDB", "PostgresSQL", "MySQL", "Django", "Dotnet", "Express.js"];
+  const skills = [
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Talwind CSS",
+    "MongoDB",
+    "PostgresSQL",
+    "MySQL",
+    "Django",
+    "Dotnet",
+    "Express.js",
+  ];
   return (
     <motion.div
       className="h-full"
@@ -11,9 +25,9 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="">
+      <div className="h-full overflow-scroll lg:flex">
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 lg:pr-0 xl:gap-64 w-2/3 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
@@ -74,9 +88,11 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">SKILLS</h1>
             {/* SKILL LIST */}
             <div className="flex gap-4 flex-wrap">
-              {skills.map(skill => <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                {skill}
-              </div>)}
+              {skills.map((skill) => (
+                <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                  {skill}
+                </div>
+              ))}
             </div>
             {/* SCROLL SVG */}
             <motion.svg
@@ -103,10 +119,18 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* EXPERIENCE CONTAINER */}
-          <div>EXPERIENCE</div>
+          <div className="flex flex-col gap-12 justify-center">
+            {/* EXPERIENCE TITLE */}
+            <h1 className="font-bold text-2xl">EXPERIENCE</h1>
+            {/* EXPERIENCE LIST */}
+            <div>
+              <ExperienceListItemLeft/>
+              <ExperienceListItemRight/>
+            </div>
+          </div>
         </div>
         {/* SVG CONTAINER */}
-        <div></div>
+        <div className="hidden lg:block w-1/3 xl:w-1/2"></div>
       </div>
     </motion.div>
   );
