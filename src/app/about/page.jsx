@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import ExperienceListItemLeft from "../../components/ExperienceListItemLeft";
 import ExperienceListItemRight from "../../components/ExperienceListItemRight";
+import Brain from "../../components/Brain";
+
 const AboutPage = () => {
   const skills = [
     "Python",
@@ -130,7 +132,9 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 xl:w-1/2"></div>
+        <div className="hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30">
+          <Brain/>
+        </div>
       </div>
     </motion.div>
   );
