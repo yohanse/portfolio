@@ -61,7 +61,7 @@ const AboutPage = () => {
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              I am a software engineer with a passion for software engineering.
+              I am a electrical engineer with a passion for software engineering.
             </span>
             {/* BIOGRAPHY SIGNATURE */}
             <div className="self-end">
