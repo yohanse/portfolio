@@ -40,20 +40,28 @@ const AboutPage = () => {
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 lg:pr-0 xl:gap-64 w-2/3 xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 lg:pr-0 xl:gap-64 lg:w-2/3 xl:w-1/2 sm:w-full">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESCRIPTION */}
             <p className="text-lg">
-              I am a software engineer with a passion for web development. I
-              have experience with JavaScript, React, Node.js, and MongoDB. I
-              enjoy learning new technologies and building projects.
+              I'm like a double-agent in the tech world, straddling the realms
+              of Electrical Engineering and software sorcery. With a knack for
+              decoding hardware-software mysteries, I craft applications that
+              are as sturdy as a reinforced castle. Whether it's conjuring
+              front-end magic with react.js and next.js, weaving back-end
+              wonders with Django, .NET, and Express, or enchanting mobile apps
+              with Flutter, I'm always game for a brain-teasing challenge. Armed
+              with my problem-solving prowess, I've conquered the virtual
+              battlegrounds of Codeforces, earning the prestigious title of
+              Expert. Peek into my projects to witness my wizardry in action,
+              and let's join forces to bring your wildest tech dreams to life!
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              I am a software engineer with a passion for web development.
+              I am a software engineer with a passion for software engineering.
             </span>
             {/* BIOGRAPHY SIGNATURE */}
             <div className="self-end">
@@ -144,7 +152,10 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* EXPERIENCE CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center" ref={experienceRef}>
+          <div
+            className="flex flex-col gap-12 justify-center"
+            ref={experienceRef}
+          >
             {/* EXPERIENCE TITLE */}
             <motion.h1
               initial={{ x: "-600px" }}
@@ -166,7 +177,7 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30">
+        <div className="sm:hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
