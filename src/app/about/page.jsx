@@ -26,7 +26,6 @@ const AboutPage = () => {
     "MySQL",
     "C Sharp",
     "Dotnet",
-    
   ];
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({ container: containerRef });
@@ -47,28 +46,27 @@ const AboutPage = () => {
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 lg:pr-0 xl:gap-64 lg:w-2/3 xl:w-1/2 sm:w-full">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 lg:pr-0 xl:gap-64 lg:w-4/5 xl:w-4/5 sm:w-full">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESCRIPTION */}
             <p className="text-lg">
-              I'm like a double-agent in the tech world, straddling the realms
-              of Electrical Engineering and software sorcery. With a knack for
-              decoding hardware-software mysteries, I craft applications that
-              are as sturdy as a reinforced castle. Whether it's conjuring
-              front-end magic with react.js and next.js, weaving back-end
-              wonders with Django, .NET, and Express, or enchanting mobile apps
-              with Flutter, I'm always game for a brain-teasing challenge. Armed
-              with my problem-solving prowess, I've conquered the virtual
-              battlegrounds of Codeforces, earning the prestigious title of
-              Expert. Peek into my projects to witness my wizardry in action,
-              and let's join forces to bring your wildest tech dreams to life!
+              I'm an adept professional in both Electrical Engineering and
+              software development, with a talent for integrating hardware and
+              software seamlessly. I develop robust applications using a diverse
+              skill set, including front-end technologies like React.js and
+              Next.js, back-end frameworks such as Django, .NET, and Express,
+              and mobile app development with Flutter. My problem-solving skills
+              are well-honed, earning me the title of Expert on Codeforces.
+              Explore my projects to see my expertise in action, and let's
+              collaborate to turn your tech visions into reality.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              I am a electrical engineer with a passion for software engineering.
+              I am a electrical engineer with a passion for software
+              engineering.
             </span>
             {/* BIOGRAPHY SIGNATURE */}
             <div className="self-end">
@@ -178,13 +176,27 @@ const AboutPage = () => {
               animate={isExperienceInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
             >
-              <ExperienceListItemLeft />
-              <ExperienceListItemRight />
+              <ExperienceListItemLeft
+                title={"Head of Remote Education"}
+                description={
+                  "Remote Undergrad is one of the programs Africa to Silicon Valley provides for students out of our current reach for in person training. I currently contribute to the program by organizing and giving lectures and team events."
+                }
+                date={"09/2023 - Present"}
+                company={"A2SV"}
+              />
+              <ExperienceListItemRight
+                title={"Software Engineering Intern"}
+                description={
+                  "Developed the Bible App using Flutter, enabling users to categorize, plan, and track their reading progress. Also contributed to the Ketero App with Next.js, connecting companies with customers and enhancing my frontend development skills."
+                }
+                date={"03/2023 - Present"}
+                company={"Yenetta Code"}
+              />
             </motion.div>
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="sm:hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30">
+        <div className="sm:hidden w-1/5 lg:block  sticky top-0 z-30">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
