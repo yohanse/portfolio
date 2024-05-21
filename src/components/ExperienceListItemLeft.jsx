@@ -1,25 +1,26 @@
 import React from "react";
 
-const ExperienceListItemLeft = () => {
+
+const ExperienceListItemLeft = ({title, description, date, company}) => {
   return (
     <div className="flex justify-between h-48">
       {/* LEFT */}
       <div className="w-1/3">
         {/* JOB TITLE */}
         <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">
-          Head of Remote Education
+          {title}
         </div>
         {/* JOB DESCRIPTION */}
         <div className="p-3 text-sm italic">
-          My current employment. way better than the position before!
+          {description}
         </div>
         {/* JOB DATE */}
         <div className="p-3 text-red-400 text-sm font-semibold">
-          2024 - Present
+          {date}
         </div>
         {/* JOB COMPANY */}
         <div className="bg-white p-2 rounded text-sm font-semibold w-fit">
-          A2SV
+          {company}
         </div>
       </div>
       {/* CENTER */}

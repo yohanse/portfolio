@@ -8,18 +8,25 @@ import { useStyleRegistry } from "styled-jsx";
 
 const AboutPage = () => {
   const skills = [
+    "Dart",
+    "Flutter",
     "Python",
+    "Django",
+    "HTML",
+    "Talwind CSS",
+    "Vanila CSS",
     "JavaScript",
     "TypeScript",
     "React.js",
     "Next.js",
-    "Talwind CSS",
+    "Node.js",
+    "Express.js",
     "MongoDB",
     "PostgresSQL",
     "MySQL",
-    "Django",
+    "C Sharp",
     "Dotnet",
-    "Express.js",
+    
   ];
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({ container: containerRef });
