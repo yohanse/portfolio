@@ -7,7 +7,7 @@ import Image from "next/image";
 const PortfolioPage = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-85%"]);
   const items = [
     {
       id: 1,
