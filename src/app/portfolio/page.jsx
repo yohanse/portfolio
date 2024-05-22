@@ -12,32 +12,48 @@ const PortfolioPage = () => {
     {
       id: 1,
       color: "from-red-300 to-blue-300",
-      title: "React Commerce",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      title: "Instagram Clone",
+      desc: "This project showcases my skills in Flutter (front end) and Django (back end). It supports posting, deleting, liking, and commenting on both posts and Reels, along with real-time messaging. It uses JWT authentication for security and includes secure email notifications. Built with clean architecture, it ensures maintainability and scalability.",
       img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      link: "https://github.com/yohanse/Instagram-Clone",
     },
     {
       id: 2,
       color: "from-blue-300 to-violet-300",
-      title: "Next.js Medium Blog",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      title: "Online Store",
+      desc: "This project showcases my skills in React with Redux for state management and Django for the back end. It supports a cart system, allowing users to add, delete, and order products. The application includes JWT authentication and features pages such as Home (displaying recent products) and About. Future plans include integrating Chapa for a more convenient payment method.",
       img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       link: "https://lama.dev",
     },
     {
       id: 3,
       color: "from-violet-300 to-purple-300",
-      title: "Vanilla Book App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      title: "Game Hub",
+      desc: "I built this project while learning React to solidify my understanding of front-end development. Through Game Hub, I mastered connecting to a backend, creating custom components, and using hooks for state and effect management. This project demonstrates my ability to build dynamic and responsive web applications, showcasing my skills in React and my commitment to learning and growth.",
       img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       link: "https://lama.dev",
     },
     {
       id: 4,
       color: "from-purple-300 to-red-300",
-      title: "Spotify Music App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      title: "Portfolio Website",
+      desc: "I built my portfolio website to showcase my projects and skills in web development. While the design is based on a tutorial video, I implemented it using Next.js. The site features a clean, responsive layout with detailed descriptions of my work, skills, and experiences, highlighting my proficiency in HTML, CSS, JavaScript, and Next.js.",
+      img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      link: "https://lama.dev",
+    },
+    {
+      id: 5,
+      color: "from-purple-300 to-red-300",
+      title: "Checker Game",
+      desc: "I developed this project to showcase my skills in Java programming. Utilizing Swing GUI, despite its limitations, I crafted a user-friendly interface. Through this project, I honed my coding techniques and gained valuable insights into Java development.",
+      img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      link: "https://lama.dev",
+    },
+    {
+      id: 6,
+      color: "from-purple-300 to-red-300",
+      title: "Portfolio Website",
+      desc: "I built my portfolio website to showcase my projects and skills in web development. While the design is based on a tutorial video, I implemented it using Next.js. The site features a clean, responsive layout with detailed descriptions of my work, skills, and experiences, highlighting my proficiency in HTML, CSS, JavaScript, and Next.js.",
       img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "https://lama.dev",
     },
@@ -85,12 +101,12 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div className="flex flex-col gap-4 text-white">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
 
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[300px]">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[250px] xl:w-[600px] xl:h-[250px]">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
@@ -98,12 +114,12 @@ const PortfolioPage = () => {
                   </p>
                   <div className="flex gap-8">
                     <Link href={item.link} className="flex justify-end">
-                      <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                      <button className="p-2 text-sm md:p-4 md:text-md lg:p-4 lg:text-md bg-white text-gray-600 font-semibold m-4 rounded">
                         Check Github
                       </button>
                     </Link>
                     <Link href={item.link} className="flex justify-end">
-                      <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                      <button className="p-2 text-sm md:p-4 md:text-md lg:p-4 lg:text-md bg-white text-gray-600 font-semibold m-4 rounded">
                         See Demo
                       </button>
                     </Link>
