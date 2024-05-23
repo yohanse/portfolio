@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
   const text = "Say Hello";
@@ -16,9 +16,14 @@ const ContactPage = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
-        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-      })
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           setSucess(true);
@@ -63,12 +68,12 @@ const ContactPage = () => {
           onSubmit={sendEmail}
           ref={form}
           action=""
-          className="h-1/2 lg:h-full lg:w-3/5 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-3/5 bg-red-50 rounded-xl text-xl flex flex-col gap-6 justify-center p-12"
         >
           <span>Dear Yohanse</span>
           <textarea
             name="user_message"
-            rows="6"
+            rows="3"
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
           ></textarea>
           <span>My mail address is:</span>
@@ -88,6 +93,12 @@ const ContactPage = () => {
           )}
           {error && (
             <span className="text-red-600 font-semibold">
+              Something went wrong!
+            </span>
+          )}
+
+          {!sucess && !error && (
+            <span className="text-red-600 font-semibold invisible">
               Something went wrong!
             </span>
           )}
