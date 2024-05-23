@@ -140,7 +140,7 @@ const Navbar = () => {
             className="absolute left-0 top-0 h-screen w-screen bg-black text-white flex flex-col justify-center items-center gap-8 text-4xl z-40"
           >
             {links.map((link) => (
-              <motion.div variants={listItemVariants} key={link.title}>
+              <motion.div variants={listItemVariants} key={link.title} className="z-50">
                 <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
