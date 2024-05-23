@@ -24,7 +24,7 @@ const ContactPage = () => {
           setSucess(true);
           form.current.reset();
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );

@@ -18,20 +18,21 @@ const Homepage = () => {
             src="/hero.jpg"
             fill
             className="h-full w-full object-contain"
+            alt="Yohanse Mehabaw's image"
           />
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 justify-center items-center z-40">
           {/* TITLE */}
           <h1 className="text-4xl font-bold">
-            Hi, I'm Yohanse Mehabaw, a Full-Stack and Mobile Flutter Developer!
+            Hi, I&apos;m Yohanse Mehabaw, a Full-Stack and Mobile Flutter Developer!
           </h1>
           {/* DESCRIPTION */}
           <p className="md:text-xl">
             Welcome to my world of tech expertise! With skills in both
             Electrical Engineering and software sorcery, I create strong
-            applications. From React.js to Django and Flutter, I'm here to bring
-            your tech dreams to life. Let's work together to innovate and
+            applications. From React.js to Django and Flutter, I&apos;m here to bring
+            your tech dreams to life. Let&apos;s work together to innovate and
             excel.
           </p>
           {/* BUTTONS */}

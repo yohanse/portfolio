@@ -1,5 +1,5 @@
 "use client";
-import { AnimatePresence, delay, easeInOut, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import Navbar from "./Navbar";
 import { usePathname } from "next/navigation";

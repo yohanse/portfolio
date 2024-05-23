@@ -4,7 +4,6 @@ import ExperienceListItemLeft from "../../components/ExperienceListItemLeft";
 import ExperienceListItemRight from "../../components/ExperienceListItemRight";
 import Brain from "../../components/Brain";
 import { useRef } from "react";
-import { useStyleRegistry } from "styled-jsx";
 
 const AboutPage = () => {
   const skills = [
@@ -53,14 +52,14 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESCRIPTION */}
             <p className="text-lg">
-              I'm an adept professional in both Electrical Engineering and
+              I&apos;m an adept professional in both Electrical Engineering and
               software development, with a talent for integrating hardware and
               software seamlessly. I develop robust applications using a diverse
               skill set, including front-end technologies like React.js and
               Next.js, back-end frameworks such as Django, .NET, and Express,
               and mobile app development with Flutter. My problem-solving skills
               are well-honed, earning me the title of Expert on Codeforces.
-              Explore my projects to see my expertise in action, and let's
+              Explore my projects to see my expertise in action, and let&apos;s
               collaborate to turn your tech visions into reality.
             </p>
             {/* BIOGRAPHY QUOTE */}
@@ -126,8 +125,8 @@ const AboutPage = () => {
               transition={{ delay: 0.2 }}
               className="flex gap-4 flex-wrap"
             >
-              {skills.map((skill) => (
-                <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              {skills.map((skill, index) => (
+                <div key={index} className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   {skill}
                 </div>
               ))}
