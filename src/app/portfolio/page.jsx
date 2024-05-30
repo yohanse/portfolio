@@ -107,20 +107,16 @@ const PortfolioPage = () => {
                   </h1>
 
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[250px] xl:w-[600px] xl:h-[250px]">
-                    <Image src={item.img} alt="" fill />
+                  <iframe src="https://drive.google.com/file/d/1-D4e_HybeGGC5PG1kzM61Qq15ru9bO6p/preview" width="100%" height="100%" mute style={{zIndex:"100", position:"relative"}} fill></iframe>
+                    
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
                   <div className="flex gap-8">
                     <Link href={item.link} className="flex justify-end">
-                      <button className="p-2 text-sm md:p-4 md:text-md lg:p-4 lg:text-md bg-white text-gray-600 font-semibold m-4 rounded">
+                      <button className="p-2 text-sm md:p-2 md:text-md lg:p-2 lg:text-md bg-white text-gray-600 font-semibold m-4 rounded">
                         Check Github
-                      </button>
-                    </Link>
-                    <Link href={item.link} className="flex justify-end">
-                      <button className="p-2 text-sm md:p-4 md:text-md lg:p-4 lg:text-md bg-white text-gray-600 font-semibold m-4 rounded">
-                        See Demo
                       </button>
                     </Link>
                   </div>
