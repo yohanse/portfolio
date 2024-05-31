@@ -188,7 +188,7 @@ const AboutPage = () => {
                 description={
                   "Developed the Bible App using Flutter, enabling users to categorize, plan, and track their reading progress. Also contributed to the Ketero App with Next.js, connecting companies with customers and enhancing my frontend development skills."
                 }
-                date={"03/2023 - Present"}
+                date={"03/2024 - Present"}
                 company={"Yenetta Code"}
               />
             </motion.div>
