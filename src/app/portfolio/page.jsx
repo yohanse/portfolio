@@ -19,26 +19,26 @@ const PortfolioPage = () => {
     },
     {
       id: 2,
-      color: "from-blue-300 to-violet-300",
-      title: "Online Store",
-      desc: "This project showcases my skills in React with Redux for state management and Django for the back end. It supports a cart system, allowing users to add, delete, and order products. The application includes JWT authentication and features pages such as Home (displaying recent products) and About. Future plans include integrating Chapa for a more convenient payment method.",
-      img: "https://drive.google.com/file/d/1-D4e_HybeGGC5PG1kzM61Qq15ru9bO6p/preview",
+      color: "from-purple-300 to-red-300",
+      title: "Portfolio Website",
+      desc: "I built my portfolio website to showcase my projects and skills in web development. While the design is based on a tutorial video, I implemented it using Next.js. The site features a clean, responsive layout with detailed descriptions of my work, skills, and experiences, highlighting my proficiency in HTML, CSS, JavaScript, and Next.js.",
+      img: "https://www.yohanse.me/",
       link: "https://lama.dev",
     },
     {
       id: 3,
-      color: "from-violet-300 to-purple-300",
-      title: "Game Hub",
-      desc: "I built this project while learning React to solidify my understanding of front-end development. Through Game Hub, I mastered connecting to a backend, creating custom components, and using hooks for state and effect management. This project demonstrates my ability to build dynamic and responsive web applications, showcasing my skills in React and my commitment to learning and growth.",
-      img: "https://drive.google.com/file/d/1-D4e_HybeGGC5PG1kzM61Qq15ru9bO6p/preview",
+      color: "from-blue-300 to-violet-300",
+      title: "Online Store",
+      desc: "This project showcases my skills in React with Redux for state management and Django for the back end. It supports a cart system, allowing users to add, delete, and order products. The application includes JWT authentication and features pages such as Home (displaying recent products) and About. Future plans include integrating Chapa for a more convenient payment method.",
+      img: "",
       link: "https://lama.dev",
     },
     {
       id: 4,
-      color: "from-purple-300 to-red-300",
-      title: "Portfolio Website",
-      desc: "I built my portfolio website to showcase my projects and skills in web development. While the design is based on a tutorial video, I implemented it using Next.js. The site features a clean, responsive layout with detailed descriptions of my work, skills, and experiences, highlighting my proficiency in HTML, CSS, JavaScript, and Next.js.",
-      img: "https://drive.google.com/file/d/1-D4e_HybeGGC5PG1kzM61Qq15ru9bO6p/preview",
+      color: "from-violet-300 to-purple-300",
+      title: "Game Hub",
+      desc: "I built this project while learning React to solidify my understanding of front-end development. Through Game Hub, I mastered connecting to a backend, creating custom components, and using hooks for state and effect management. This project demonstrates my ability to build dynamic and responsive web applications, showcasing my skills in React and my commitment to learning and growth.",
+      img: "",
       link: "https://lama.dev",
     },
     {
@@ -46,17 +46,10 @@ const PortfolioPage = () => {
       color: "from-purple-300 to-red-300",
       title: "Checker Game",
       desc: "I developed this project to showcase my skills in Java programming. Utilizing Swing GUI, despite its limitations, I crafted a user-friendly interface. Through this project, I honed my coding techniques and gained valuable insights into Java development.",
-      img: "https://drive.google.com/file/d/1-D4e_HybeGGC5PG1kzM61Qq15ru9bO6p/preview",
+      img: "",
       link: "https://lama.dev",
     },
-    {
-      id: 6,
-      color: "from-purple-300 to-red-300",
-      title: "Portfolio Website",
-      desc: "I built my portfolio website to showcase my projects and skills in web development. While the design is based on a tutorial video, I implemented it using Next.js. The site features a clean, responsive layout with detailed descriptions of my work, skills, and experiences, highlighting my proficiency in HTML, CSS, JavaScript, and Next.js.",
-      img: "https://drive.google.com/file/d/1-D4e_HybeGGC5PG1kzM61Qq15ru9bO6p/preview",
-      link: "https://lama.dev",
-    },
+    
   ];
   return (
     <motion.div
@@ -107,7 +100,7 @@ const PortfolioPage = () => {
                   </h1>
 
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[250px] xl:w-[600px] xl:h-[250px]">
-                  <iframe src={item.img} width="100%" height="100%" mute style={{zIndex:"100", position:"relative"}} fill></iframe>
+                  {item.img != "" ? <iframe src={item.img} width="100%" height="100%" mute style={{zIndex:"100", position:"relative"}} fill></iframe> : <p className="w-full h-full">A demo of the project is coming soon! For now, feel free to check out the project on GitHub.</p>}
                     
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
