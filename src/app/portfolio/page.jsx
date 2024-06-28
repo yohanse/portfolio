@@ -23,7 +23,7 @@ const PortfolioPage = () => {
       title: "Portfolio Website",
       desc: "I built my portfolio website to showcase my projects and skills in web development. While the design is based on a tutorial video, I implemented it using Next.js. The site features a clean, responsive layout with detailed descriptions of my work, skills, and experiences, highlighting my proficiency in HTML, CSS, JavaScript, and Next.js.",
       img: "https://www.yohanse.me/",
-      link: "https://lama.dev",
+      link: "https://github.com/yohanse/portfolio",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const PortfolioPage = () => {
       title: "Online Store",
       desc: "This project showcases my skills in React with Redux for state management and Django for the back end. It supports a cart system, allowing users to add, delete, and order products. The application includes JWT authentication and features pages such as Home (displaying recent products) and About. Future plans include integrating Chapa for a more convenient payment method.",
       img: "",
-      link: "https://lama.dev",
+      link: "https://github.com/yohanse/e-commerce",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const PortfolioPage = () => {
       title: "Game Hub",
       desc: "I built this project while learning React to solidify my understanding of front-end development. Through Game Hub, I mastered connecting to a backend, creating custom components, and using hooks for state and effect management. This project demonstrates my ability to build dynamic and responsive web applications, showcasing my skills in React and my commitment to learning and growth.",
       img: "",
-      link: "https://lama.dev",
+      link: "https://github.com/yohanse/game-hub-second-react-exercise",
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const PortfolioPage = () => {
       title: "Checker Game",
       desc: "I developed this project to showcase my skills in Java programming. Utilizing Swing GUI, despite its limitations, I crafted a user-friendly interface. Through this project, I honed my coding techniques and gained valuable insights into Java development.",
       img: "",
-      link: "https://lama.dev",
+      link: "https://github.com/yohanse/CHECKERS_PROJECT",
     },
     
   ];
